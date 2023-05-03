@@ -1,0 +1,59 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Basic Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 35,
+        "color": "Black"
+      },
+      {
+        "id": 2,
+        "name": "Hello Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 17,
+        "color": "Black"
+      },
+      {
+        "id": 3,
+        "name": "cc Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 28,
+        "color": "Black"
+      },
+      {
+        "id": 4,
+        "name": "Game Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 45,
+        "color": "Black"
+      },
+      {
+        "id": 5,
+        "name": "BEE Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 8,
+        "color": "Black"
+      },
+      {
+        "id": 6,
+        "name": "NEW Tee",
+        "href": "#",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "imageAlt": "Front of men's Basic Tee in black.",
+        "price": 23,
+        "color": "Black"
+      }
+    ]
+  }
+  
