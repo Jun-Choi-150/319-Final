@@ -31,19 +31,19 @@ function CartSummary({ onBackClick, onPayClick }) {
       <div className="mt-6 space-y-4">
         {cart.map((product) => (
           <div
-            key={product.id}
+            key={product._id}
             className="bg-gray-100 p-4 rounded-md flex justify-between items-center"
           >
             <div className="flex items-center">
               <div className="h-16 w-16 flex-shrink-0 overflow-hidden rounded-md bg-gray-200 lg:h-16 lg:w-16">
                 <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
+                  src={product.image}
+                  alt={product.title}
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div>
               <div className="ml-4">
-                <h3 className="text-sm text-gray-700">{product.name}</h3>
+                <h3 className="text-sm text-gray-700">{product.title}</h3>
                 <p className="mt-1 text-sm text-gray-500">
                   Qty: {product.quantity}
                 </p>

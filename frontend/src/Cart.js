@@ -81,11 +81,11 @@ export default function Cart({ onCheckoutClick }) {
                           >
                             {cart.length > 0 ? (
                               cart.map((product) => (
-                                <li key={product.id} className="flex py-6">
+                                <li key={product._id} className="flex py-6">
                                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                     <img
-                                      src={product.imageSrc}
-                                      alt={product.imageAlt}
+                                      src={product.image}
+                                      alt={product.title}
                                       className="h-full w-full object-cover object-center"
                                     />
                                   </div>
@@ -95,13 +95,13 @@ export default function Cart({ onCheckoutClick }) {
                                       <div className="flex justify-between text-base font-medium text-gray-900">
                                         <h3>
                                           <a href={product.href}>
-                                            {product.name}
+                                            {product.title}
                                           </a>
                                         </h3>
                                         <p className="ml-4">{product.price}</p>
                                       </div>
                                       <p className="mt-1 text-sm text-gray-500">
-                                        {product.color}
+                                        {product.category}
                                       </p>
                                     </div>
                                     <div className="flex flex-1 items-end justify-between text-sm">

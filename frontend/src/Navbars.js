@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
@@ -29,12 +29,34 @@ export default function NavBars({
 
 //{ name: "Contact Us", current: "contact" },
 
+const [products, setProducts] = useState([]);
+
+useEffect(() => {
+  getAllProducts();
+}, []);
+
+// useEffect(() => {
+//   getAllProducts();
+// }, []);
+
+function getAllProducts() {
+  fetch("http://localhost:4000/")
+    .then((response) => response.json())
+    .then((data) => {
+      const mappedData = data.map((product) => ({
+        ...product,
+        id: product._id,
+      }));
+      setProducts(mappedData);
+    });
+}
+
   const dispatch = useDispatch();
 
   const [showCart, setShowCart] = useState(false);
   const [query, setQuery] = useState("");
 
-  const [productList] = useState([...productData.products]);
+  const [productList] = useState([...products]);
 
   const [showSearchInput, setShowSearchInput] = useState(false);
 

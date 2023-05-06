@@ -4,21 +4,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "./store/cartSlice.js";
 
 function ButtonCounter({ product })  {
-  const [count, setCount] = useState(0);
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart);
   const [productQuantity, setProductQuantity] = useState(0);
 
   const increment = (e) => {
     e.stopPropagation();
-    setCount(count + 1);
     dispatch(addToCart(product));
   };
 
   const decrement = (e) => {
     e.stopPropagation();
-    if (count > 0) {
-      setCount(count - 1);
+    if (productQuantity > 0) {
       dispatch(removeFromCart(product.id));
     }
   };
@@ -49,9 +46,6 @@ function ButtonCounter({ product })  {
       >
         +
       </Button>
-      {
-
-      }
     </div>
   );
 }
